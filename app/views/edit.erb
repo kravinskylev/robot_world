@@ -1,0 +1,14 @@
+<div class="centered">
+  <h1>Edit robot</h1>
+
+<form class="pure-form" action="/robots/<%= @robot.id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+  <input class="pure-form" type="text" name="robot[title]" value="<%=@robot.title%>">
+  <textarea class="pure-form" name="robot[description]"> <%= @robot.description%> </textarea>
+  <input type="submit" value="update robot">
+</form>
+
+<div id="footer">
+  Check it out on <a href="https://github.com/kravinskylev/robot_manager">GitHub</a>
+</div>
+</div>

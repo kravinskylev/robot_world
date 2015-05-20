@@ -1,5 +1,14 @@
-<a href="/tasks">Task Index</a>
+<div class="front-page">
 
-<h1><%= @task.title %></h1>
+<a href="/robots">robot Index</a>
 
-<p><%= @task.description %></p>
+<h1><%= @robot.title %></h1>
+
+<p><%= @robot.description %></p>
+</div>
+<span class="delete">
+  <form class="pure-form" action="/robots/<%= @robot.id %>" method="POST">
+    <input type="hidden" value="DELETE" name="_method">
+    <input class="pure-input-rounded" type="submit" value="delete">
+  </form>
+</span>

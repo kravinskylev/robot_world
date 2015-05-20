@@ -100,7 +100,7 @@ body {
     color:#268bd2;
 }
 
-.all-tasks {
+.all-robots {
   text-align: center;
   font-size: 4vh;
   color:#4D4D4D;
@@ -111,4 +111,18 @@ body {
   border-radius: 15%;
   border-width: medium;
   padding:5px;
+}
+
+.edit {
+  width:2%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.delete {
+  font-size:2vh;
+  text-align: center;
+  background-color: #8EAEF5;
 }
