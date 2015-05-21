@@ -3,9 +3,29 @@
 
 <form class="pure-form" action="/robots/<%= @robot.id %>" method="POST">
   <input type="hidden" name="_method" value="PUT">
-  <input class="pure-form" type="text" name="robot[title]" value="<%=@robot.title%>">
-  <textarea class="pure-form" name="robot[description]"> <%= @robot.description%> </textarea>
-  <input type="submit" value="update robot">
+
+  <input class="pure-form" type="text" name="robot[title]"
+    value="<%=@robot.title%>">
+      <br>
+  <input class="pure-form" type="text" name="robot[description]"
+    value="<%= @robot.description%>">
+      <br>
+  <input class="pure-form" type="text" name="robot[job]"
+    value="<%= @robot.job%>">
+      <br>
+  <input class="pure-form" type="text" name="robot[city]"
+    value="<%= @robot.city%>">
+      <br>
+  <input class="pure-form" type="text" name="robot[state]"
+    value="<%= @robot.state%>">
+      <br>
+  <input class="pure-form" type="text" name="robot[department]"
+    value="<%= @robot.department%>">
+      <br>
+  <div id="centered-button">
+    <input type="submit" value="update robot">
+  </div>
+    <br>
 </form>
 
 <div id="footer">

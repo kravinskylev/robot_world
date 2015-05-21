@@ -11,7 +11,13 @@ class RobotManager
       database['robots'] ||= []
       database['total'] ||= 0
       database['total'] += 1
-      database['robots'] << { "id" => database['total'], "title" => robot[:title], "description" => robot[:description] }
+      database['robots'] << { "id"          => database['total'],
+                              "title"       => robot[:title],
+                              "description" => robot[:description],
+                              "city"        => robot[:city],
+                              "state"       => robot[:state],
+                              "job"         => robot[:job],
+                              "department"  => robot[:department]}
     end
   end
 
@@ -36,8 +42,12 @@ class RobotManager
   def self.update(id, data)
     database.transaction do
       target = database['robots'].find { |element| element["id"] == id }
-      target["title"] = data[:title]
+      target["title"]       = data[:title]
       target["description"] = data[:description]
+      target["job"]         = data[:job]
+      target["city"]        = data[:city]
+      target["state"]       = data[:state]
+      target["department"]  = data[:department]
     end
   end
 

@@ -1,5 +1,5 @@
 body {
-  background-image: url('/plaid.jpg');
+  background-image: url('/plaid4.jpg');
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
@@ -40,7 +40,7 @@ body {
   padding:3%;
   margin:auto;
   margin-bottom:3%;
-  background:#e5e5e5;
+  background:transparent;
   line-height:45px;
   transition: opacity 0.5s;
   -webkit-transition: all ease 0.5s;
@@ -121,8 +121,25 @@ body {
   text-align: center;
 }
 
+.centered input {
+  display:block;
+  margin: 5px;
+}
+
 .delete {
   font-size:2vh;
   text-align: center;
   background-color: #8EAEF5;
+}
+
+.front-page input {
+  height:50px;
+  padding:10px;
+  margin:10px;
+}
+
+#centered-button {
+  margin-left:45%;
+  display: block;
+  text-align: center;
 }
