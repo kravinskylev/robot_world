@@ -1,0 +1,17 @@
+---
+robots:
+- id: 1
+  title: rads
+  description: silly
+  city: denvah
+  state: coloradah
+  job: stupid
+  department: of labor!!!
+- id: 2
+  title: robot
+  description: smart
+  city: philly
+  state: pa
+  job: coder
+  department: store
+total: 2

@@ -11,10 +11,10 @@ Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
 # require the model(s)
 Dir[APP_ROOT.join('app', 'models', '*.rb')].each { |file| require file }
 
-# configure  RobotManagerApp settings
-class  RobotManagerApp < Sinatra::Base
+# configure  RobotWorldApp settings
+class  RobotWorldApp < Sinatra::Base
   set :method_override, true
   set :root, APP_ROOT.to_path
-  set :views, File.join( RobotManagerApp.root, "app", "views")
-  set :public_folder, File.join( RobotManagerApp.root, "app", "public")
+  set :views, File.join( RobotWorldApp.root, "app", "views")
+  set :public_folder, File.join( RobotWorldApp.root, "app", "public")
 end

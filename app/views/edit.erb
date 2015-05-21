@@ -1,5 +1,5 @@
 <div class="centered">
-  <h1>Edit robot</h1>
+  <h1>Edit Robot</h1>
 
 <form class="pure-form" action="/robots/<%= @robot.id %>" method="POST">
   <input type="hidden" name="_method" value="PUT">
@@ -21,14 +21,14 @@
       <br>
   <input class="pure-form" type="text" name="robot[department]"
     value="<%= @robot.department%>">
-      <br>
+
   <div id="centered-button">
     <input type="submit" value="update robot">
   </div>
-    <br>
 </form>
+</div>
+
 
 <div id="footer">
-  Check it out on <a href="https://github.com/kravinskylev/robot_manager">GitHub</a>
-</div>
+  <a href="https://github.com/kravinskylev/robot_world">Check it out on GitHub</a>
 </div>

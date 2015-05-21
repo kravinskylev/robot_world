@@ -1,10 +1,10 @@
 body {
-  background-image: url('/plaid4.jpg');
+  background: url('/plaid5.jpg');
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 
 .front-page {
-  text-align: center;
+  text-align: left;
   font-size: 5vh;
 }
 
@@ -28,19 +28,21 @@ body {
 }
 
 #welcome-header {
-  text-align: center;
+  text-align: left;
   font-size: 6vh;
   color:#4D4D4D;
+  padding-left: 3%;
+  display: block;
 }
 
 .fadebutton {
-  text-align:center;
+  text-align:left;
   font-weight:600;
   width:25%;
   padding:3%;
-  margin:auto;
+  margin-left:5%;
   margin-bottom:3%;
-  background:transparent;
+  background:rgba(255,255,255,0.5);
   line-height:45px;
   transition: opacity 0.5s;
   -webkit-transition: all ease 0.5s;
@@ -63,7 +65,10 @@ body {
 }
 
 #footer a {
+  margin-left: 8%;
   color:black;
+  position:fixed;
+	bottom:0;
 }
 
 #footer a:hover {
@@ -77,7 +82,8 @@ body {
 }
 
 .index {
-  text-align: center;
+  margin-left: 3%;
+  text-align: left;
   font-size: 5vh;
 }
 
@@ -101,7 +107,7 @@ body {
 }
 
 .all-robots {
-  text-align: center;
+  text-align: left;
   font-size: 4vh;
   color:#4D4D4D;
 }
@@ -128,7 +134,7 @@ body {
 
 .delete {
   font-size:2vh;
-  text-align: center;
+  text-align: left;
   background-color: #8EAEF5;
 }
 
@@ -142,4 +148,11 @@ body {
   margin-left:45%;
   display: block;
   text-align: center;
+}
+
+.pure-button {
+  margin-left: 8%;
+  display: inline-block;
+  height:60px;
+  margin-bottom: 25px;
 }
